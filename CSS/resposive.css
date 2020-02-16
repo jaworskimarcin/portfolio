@@ -1,0 +1,37 @@
+@media all and (max-width: 980px) {
+    .inner-gallery {
+        flex-basis: 50%;
+    }
+}
+
+@media all and (max-width: 768px){
+    #about figure img {
+        width: 300px;
+        height: 300px;
+    }
+    .inner-gallery,
+    form input:not([type="submit"]) {
+        flex-basis: 100%;
+    }
+    .inner-gallery img {
+        object-fit: cover;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .main-nav label {
+        display: block;
+    }
+    .main-nav ul {
+        display: none;
+    }
+    .main-nav input:checked + ul {
+        display: flex;
+    }
+    #about figure img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+}
